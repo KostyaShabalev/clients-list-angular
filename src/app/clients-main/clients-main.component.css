@@ -1,0 +1,47 @@
+
+app-client-details {
+	outline: 1px solid blue;
+	width: 60%;
+	padding: 5px;
+	display: flex;
+}
+
+.main-cnt {
+	width: 70%;
+	height: 60vh;
+	margin: auto;
+	padding: 5px;
+	background: #B9ECB6;
+	border: 1px solid black;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.title-cnt {
+	width: 100%;
+	max-height: 7%;
+	background: #27D778FF;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.clients-cnt {
+	outline: 1px solid red;
+	height: 95%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.clients-find {
+	width: 40%;
+	height: 100%;
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background: #B9ECB6;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}

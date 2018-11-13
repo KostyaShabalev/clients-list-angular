@@ -1,0 +1,17 @@
+
+.details-main {
+	outline: 1px solid green;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.avatar {
+	margin-top: 10px;
+	padding: 5px;
+}
+
+.client-details {
+	margin-top: 10px;
+	padding: 5px;
+}
