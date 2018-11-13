@@ -1,32 +1,30 @@
 
-
 <div class="details-main">
 	
 	<div class="avatar">
-		<img src="../../favicon.ico" alt="">
+		<img src={{details.general.avatar}} alt="">
 	</div>
 
 	<div class="client-details">
 		
 		<div class="details-gen">
-			<span class="first-name">FirstName</span>
+			<span class="name">{{details.general.firstName}} {{details.general.lastName}}
+			</span>
 			<br>
-			<span class="last-name">LastName</span>
-			<br>
-			<span class="job-title">Title - Company</span>
+			<span class="job">{{details.job.title}} - {{details.job.company}}</span>
 		</div>
 
 		<div class="details-other">
 			<span class="email">
-			<b>Email:</b> Email
+			<b>Email:</b> {{details.contact.email}}
 		</span>
 		<br>
 		<span class="phone">
-			<b>Phone:</b> Phone
+			<b>Phone:</b> {{details.contact.phone}}
 		</span>
 		<br>
 		<span class="address"><b>Address:</b>
-			Address
+			{{details.address.street}}, {{details.address.city}}, {{details.address.zipCode}}, {{details.address.country}}
 		</span>
 		</div>
 

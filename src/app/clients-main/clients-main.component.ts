@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ClientsService } from '../clients.service';
+
 @Component({
   selector: 'app-clients-main',
   templateUrl: './clients-main.component.html',
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientsMainComponent implements OnInit {
 
-  constructor() { }
+	public clients;
+	public clientsToList;
+  public clientDetails;
+  public areDetailsVisible = false;
+
+  constructor(private _clientsService: ClientsService) { }
 
   ngOnInit() {
+
+  	this._clientsService.getClients()
+  		.subscribe(items => {
+  				this.clients = this.clientsToList = items;
+  			});
+
   }
+
+  showClientDetails(client) {
+
+    this.areDetailsVisible = true;
+    this.clientDetails = client;
+  }
+
 
 }

@@ -12,13 +12,17 @@
 			
 			<app-input></app-input>
 
-			<app-clients-list>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat exercitationem, minima est, suscipit non dolorem beatae quibusdam ducimus voluptatibus enim dolore obcaecati laudantium repellendus odio iure culpa ab velit explicabo.
+			<app-clients-list
+				[clientsToShow]="clientsToList"
+				(clientDetailed)="showClientDetails($event)">
 			</app-clients-list>
 
 		</div>
 
-		<app-client-details></app-client-details>
+		<app-client-details
+			*ngIf="areDetailsVisible"
+			[details]="clientDetails">
+		</app-client-details>
 
 	</div>
 

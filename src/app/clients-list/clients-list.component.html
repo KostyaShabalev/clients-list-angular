@@ -1,18 +1,18 @@
 
+<div class="client-item"
+	*ngFor="let client of clientsToShow"
+	(click)="throwClientDetails(client)">
 
-<div class="list-cnt">
-	
-	<div class="client-item">
-		
-		<div class="client-ava"></div>
+<img id="avatar" src={{client.general.avatar}} alt="avatar">
 
-		<div class="client-info">
-			<span>FirstName </span>
-			<span>LastName</span>
-			<br>
-			<span>Job</span>
-		</div>
-
-	</div>
+<div class="client-info">
+	<span id="name">
+		{{client.general.firstName}} {{client.general.lastName}}
+	</span>
+	<br>
+	<span id="job-title">
+		{{client.job.title}}
+	</span>
+</div>
 
 </div>

@@ -1,9 +1,15 @@
 
 app-client-details {
-	outline: 1px solid blue;
+	/*outline: 1px solid blue;*/
 	width: 60%;
 	padding: 5px;
 	display: flex;
+}
+
+app-clients-list {
+	/*outline: 1px solid blue;*/
+	margin-top: 5px;
+	overflow-y: auto;
 }
 
 .main-cnt {
@@ -27,8 +33,12 @@ app-client-details {
 	border-radius: 5px;
 }
 
+.title-text {
+	
+}
+
 .clients-cnt {
-	outline: 1px solid red;
+	/*outline: 1px solid red;*/
 	height: 95%;
 	display: flex;
 	justify-content: space-between;
