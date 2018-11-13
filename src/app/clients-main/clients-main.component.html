@@ -1,5 +1,4 @@
 
-
 <div class="main-cnt">
 	
 	<div class="title-cnt">
@@ -10,19 +9,18 @@
 
 		<div class="clients-find">
 			
-			<app-input></app-input>
+			<app-input
+			(stringToFind)="findClients($event)"></app-input>
 
 			<app-clients-list
-				[clientsToShow]="clientsToList"
-				(clientDetailed)="showClientDetails($event)">
-			</app-clients-list>
+			[clientsToShow]="clientsToList"
+			(clientDetailed)="showClientDetails($event)"></app-clients-list>
 
 		</div>
 
 		<app-client-details
-			*ngIf="areDetailsVisible"
-			[details]="clientDetails">
-		</app-client-details>
+		*ngIf="areDetailsVisible"
+		[details]="clientDetails"></app-client-details>
 
 	</div>
 

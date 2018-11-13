@@ -31,5 +31,10 @@ export class ClientsMainComponent implements OnInit {
     this.clientDetails = client;
   }
 
+  findClients(string) {
+    
+    this.clientsToList = this._clientsService.findMatches(this.clients, string);
+  }
+
 
 }
