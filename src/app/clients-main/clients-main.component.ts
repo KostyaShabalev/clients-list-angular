@@ -18,6 +18,7 @@ export class ClientsMainComponent implements OnInit {
 
   ngOnInit() {
 
+    // Getting clients
   	this._clientsService.getClients()
   		.subscribe(items => {
   				this.clients = this.clientsToList = items;
@@ -26,13 +27,15 @@ export class ClientsMainComponent implements OnInit {
   }
 
   showClientDetails(client) {
+    // Method assigns client to show and makes details visible
 
     this.areDetailsVisible = true;
     this.clientDetails = client;
   }
 
   findClients(string) {
-    
+    // Method conducts autocomplete
+
     this.clientsToList = this._clientsService.findMatches(this.clients, string);
   }
 

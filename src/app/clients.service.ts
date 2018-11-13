@@ -14,6 +14,7 @@ export class ClientsService {
   constructor(private _http: HttpClient) { }
 
   getClients() {
+    // Method fetches out data from the clients.json file
 
   	return this._http.get(this._url)
   		.pipe(
@@ -23,9 +24,7 @@ export class ClientsService {
   }
 
   findMatches(clients, string) {
-
-  	console.log(clients);
-  	console.log(string);
+    // Method returns an array with clients which string-fields contain input string
 
   	if (!string) return clients;
 
@@ -35,10 +34,12 @@ export class ClientsService {
 
   			const allClientFields = [];
 
+        // Filling allClientFields with string values
   			Object.values(client).forEach(item => {
   				allClientFields.splice(allClientFields.length, 0, ...Object.values(item));
   				});
 
+        // Finding matches in allClientFields
   			const matches = allClientFields.filter(field => {
   					if (field.toLowerCase().indexOf('http') === -1)
   						return field.toLowerCase().indexOf(string) !== -1;

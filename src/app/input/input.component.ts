@@ -15,6 +15,8 @@ export class InputComponent implements OnInit {
   }
 
   throwString(event) {
+    // Method throws current input value to the main component
+
   	this.stringToFind.emit(event.target.value);
   }
 

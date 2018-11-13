@@ -17,6 +17,8 @@ export class ClientsListComponent implements OnInit {
   }
 
   throwClientDetails(client) {
+    // Method throws client to the main component
+
   	this.clientDetailed.emit(client);
   }
 

@@ -1,9 +1,7 @@
 
-.details-main {
-	outline: 1px solid green;
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
+.client-details {
+	margin-top: 10px;
+	padding: 5px;
 }
 
 .avatar {
@@ -11,7 +9,16 @@
 	padding: 5px;
 }
 
-.client-details {
-	margin-top: 10px;
-	padding: 5px;
+.details-main {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.name {
+	font-weight: bold;
+}
+
+.details-other {
+	margin-top: 30px;
 }
