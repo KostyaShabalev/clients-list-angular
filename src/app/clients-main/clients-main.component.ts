@@ -8,9 +8,8 @@ import { ClientsService } from '../clients.service';
   styleUrls: ['./clients-main.component.css']
 })
 export class ClientsMainComponent implements OnInit {
-
-	public clients;
-	public clientsToList;
+  public clients;
+  public clientsToList;
   public clientDetails;
   public areDetailsVisible = false;
 
@@ -19,10 +18,10 @@ export class ClientsMainComponent implements OnInit {
   ngOnInit() {
 
     // Getting clients
-  	this._clientsService.getClients()
-  		.subscribe(items => {
-  				this.clients = this.clientsToList = items;
-  			});
+    this._clientsService.getClients()
+    .subscribe(items => {
+      this.clients = this.clientsToList = items;
+    });
 
   }
 

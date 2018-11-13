@@ -1,14 +1,14 @@
 
 <div class="details-main">
 	
-	<div class="avatar">
+	<div class="client-avatar_details">
 		<img src={{details.general.avatar}} alt="">
 	</div>
 
 	<div class="client-details">
 		
 		<div class="details-gen">
-			<span class="name">{{details.general.firstName}} {{details.general.lastName}}
+			<span class="client-name_detailed">{{details.general.firstName}} {{details.general.lastName}}
 			</span>
 			<br>
 			<br>
@@ -16,17 +16,17 @@
 		</div>
 
 		<div class="details-other">
-			<span class="email">
-			<b>Email:</b> {{details.contact.email}}
+			<span class="client-email">
+			<i class="fas fa-laptop"></i>: {{details.contact.email}}
 		</span>
 		<br>
 		<br>
-		<span class="phone">
-			<b>Phone:</b> {{details.contact.phone}}
+		<span class="client-phone">
+			<i class="fas fa-mobile-alt"></i>: {{details.contact.phone}}
 		</span>
 		<br>
 		<br>
-		<span class="address"><b>Address:</b>
+		<span class="client-address"><i class="fas fa-envelope"></i>:
 			{{details.address.street}}, {{details.address.city}}, {{details.address.zipCode}}, {{details.address.country}}
 		</span>
 		</div>

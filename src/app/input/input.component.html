@@ -1,4 +1,8 @@
+<form class="clients-form"
+	(keyup)="throwString($event)">
 
-<input
-	(keyup)="throwString($event)"
-	class="input" type="text">
+	<mat-form-field class="clients-full-width">
+		<input matInput placeholder="Find client">
+	</mat-form-field>
+
+</form>

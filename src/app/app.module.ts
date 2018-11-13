@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { MaterialModule } from './material';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -11,15 +15,17 @@ import { ClientDetailsComponent } from './client-details/client-details.componen
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ClientsMainComponent,
-    ClientsListComponent,
-    InputComponent,
-    ClientDetailsComponent
+  AppComponent,
+  ClientsMainComponent,
+  ClientsListComponent,
+  InputComponent,
+  ClientDetailsComponent,
   ],
   imports: [
-    BrowserModule,
-    HttpClientModule
+  BrowserModule,
+  HttpClientModule,
+  BrowserAnimationsModule,
+  MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,9 +7,9 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ClientsListComponent implements OnInit {
 
-	@Input() public clientsToShow;
+  @Input() public clientsToShow;
 
-	@Output() public clientDetailed = new EventEmitter();
+  @Output() public clientDetailed = new EventEmitter();
 
   constructor() { }
 
@@ -19,7 +19,7 @@ export class ClientsListComponent implements OnInit {
   throwClientDetails(client) {
     // Method throws client to the main component
 
-  	this.clientDetailed.emit(client);
+    this.clientDetailed.emit(client);
   }
 
 }

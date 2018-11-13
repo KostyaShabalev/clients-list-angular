@@ -3,14 +3,14 @@
 	*ngFor="let client of clientsToShow"
 	(click)="throwClientDetails(client)">
 
-<img id="avatar" src={{client.general.avatar}} alt="avatar">
+<img id="client-avatar_list" src={{client.general.avatar}} alt="avatar">
 
 <div class="client-info">
-	<span id="name">
+	<span id="client-name">
 		{{client.general.firstName}} {{client.general.lastName}}
 	</span>
 	<br>
-	<span id="job-title">
+	<span id="client-job_title">
 		{{client.job.title}}
 	</span>
 </div>

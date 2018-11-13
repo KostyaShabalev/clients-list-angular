@@ -5,13 +5,10 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './client-details.component.html',
   styleUrls: ['./client-details.component.css']
 })
-export class ClientDetailsComponent implements OnInit {
+export class ClientDetailsComponent{
 
 	@Input() public details;
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+	constructor() { }
 
 }

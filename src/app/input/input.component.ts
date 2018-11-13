@@ -1,23 +1,20 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-input',
-  templateUrl: './input.component.html',
-  styleUrls: ['./input.component.css']
+	selector: 'app-input',
+	templateUrl: './input.component.html',
+	styleUrls: ['./input.component.css']
 })
-export class InputComponent implements OnInit {
+export class InputComponent {
 
 	@Output() public stringToFind = new EventEmitter();
 
-  constructor() { }
+	constructor() { }
 
-  ngOnInit() {
-  }
+	throwString(event) {
+		// Method throws current input value to the main component
 
-  throwString(event) {
-    // Method throws current input value to the main component
-
-  	this.stringToFind.emit(event.target.value);
-  }
+		this.stringToFind.emit(event.target.value);
+	}
 
 }
